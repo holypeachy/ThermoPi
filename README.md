@@ -6,6 +6,11 @@ A hardware thermostat and HVAC controller built for my Raspberry Pi 4B running V
 
 I was finally brave enough to face C++, the old boy who scared me when I was a young one. A real time OS, tasks and priorities, semaphores, mutexes, interrupts for the buttons, hardware timings to measure out the pulses of the DHT sensor, and most of my GPIO pins used. Oh yeah, and it's in Kernel space (DKM). It's got it all.
 
+### It's not much but it's honest work 🧑‍🌾 
+
+<img width="400" height="500" alt="PXL_20260921_065002474" src="https://github.com/user-attachments/assets/d6eb7881-0802-4e8e-a0c6-3a06481b1be1" />
+
+
 ## Features
 
 - Custom DHT22 driver using direct GPIO access, high-resolution pulse measurement, and checksum validation
@@ -41,8 +46,7 @@ Source the Wind River SDK environment, configure the DKM toolchain, and build:
 ```bash
 source /path/to/wrsdk-vxworks7-raspberrypi4b/sdkenv.sh
 
-cmake -S . -B build \
-    -DCMAKE_TOOLCHAIN_FILE="$WIND_SDK_HOME/vxsdk/sysroot/mk/dkm.toolchain.cmake"
+cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE="$WIND_SDK_HOME/vxsdk/sysroot/mk/dkm.toolchain.cmake"
 cmake --build build
 ```
 
