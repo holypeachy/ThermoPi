@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/peach/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/sysroot/krnl/h/public/subsys/gpio/"
+            ],
+            "defines": [],
+            "compilerPath": "~/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/host/x86_64-linux/bin/wr-c++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerArgs": [
+                "-dkm"
+            ]
+        }
+    ],
+    "version": 4
+}

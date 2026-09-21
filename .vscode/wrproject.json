@@ -1,0 +1,8 @@
+{
+    "sdkPath": "/home/peach/dev/vxworks/wrsdk-vxworks7-qemu-1.17.0/",
+    "envFile": "/home/peach/dev/vxworks/wrsdk-vxworks7-qemu-1.17.0//sdkenv.sh",
+    "toolchainFile": "/home/peach/dev/vxworks/wrsdk-vxworks7-qemu-1.17.0//vxsdk/sysroot/mk/dkm.toolchain.cmake",
+    "projectType": "CMake DKM",
+    "platformType": "VxWorks",
+    "cmakePath": "/home/peach/dev/vxworks/wrsdk-vxworks7-qemu-1.17.0/vxsdk/host/x86_64-linux/bin/cmake"
+}

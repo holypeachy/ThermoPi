@@ -1,0 +1,7 @@
+{
+    "cmake.cmakePath": "${workspaceFolder}/.vscode/run_cmake.cmd",
+    "cmake.configureArgs": [
+        "-DSIP_DIR:STRING=undefined",
+        "-DCUSTOM_MODULES_DIR:STRING=undefined"
+    ]
+}
