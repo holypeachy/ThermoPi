@@ -18,19 +18,19 @@ bool initButtons(){
     if (vxbGpioIntConnect(MODE_BTN,
         reinterpret_cast<VOIDFUNCPTR>(buttonIsr),
         nullptr) != OK){
-            printf("gpio connect failed\n");
+            printf("gpio int connect failed\n");
             return false;
         }
     if (vxbGpioIntConfig(MODE_BTN,
         INTR_TRIGGER_EDGE,
         INTR_POLARITY_HIGH) != OK){
-            printf("gpio config failed\n");
+            printf("gpio int config failed\n");
             return false;
         }
     if (vxbGpioIntEnable(MODE_BTN,
         reinterpret_cast<VOIDFUNCPTR>(buttonIsr),
         nullptr) != OK){
-            printf("gpio enable failed\n");
+            printf("gpio int enable failed\n");
             return false;
         }
 
@@ -40,19 +40,19 @@ bool initButtons(){
     if (vxbGpioIntConnect(INC_BTN,
         reinterpret_cast<VOIDFUNCPTR>(buttonIsr),
         nullptr) != OK){
-            printf("gpio connect failed\n");
+            printf("gpio int connect failed\n");
             return false;
         }
     if (vxbGpioIntConfig(INC_BTN,
         INTR_TRIGGER_EDGE,
         INTR_POLARITY_HIGH) != OK){
-            printf("gpio config failed\n");
+            printf("gpio int config failed\n");
             return false;
         }
     if (vxbGpioIntEnable(INC_BTN,
         reinterpret_cast<VOIDFUNCPTR>(buttonIsr),
         nullptr) != OK){
-            printf("gpio enable failed\n");
+            printf("gpio int enable failed\n");
             return false;
         }
 
@@ -62,19 +62,19 @@ bool initButtons(){
     if (vxbGpioIntConnect(DEC_BTN,
         reinterpret_cast<VOIDFUNCPTR>(buttonIsr),
         nullptr) != OK){
-            printf("gpio connect failed\n");
+            printf("gpio int connect failed\n");
             return false;
         }
     if (vxbGpioIntConfig(DEC_BTN,
         INTR_TRIGGER_EDGE,
         INTR_POLARITY_HIGH) != OK){
-            printf("gpio config failed\n");
+            printf("gpio int config failed\n");
             return false;
         }
     if (vxbGpioIntEnable(DEC_BTN,
         reinterpret_cast<VOIDFUNCPTR>(buttonIsr),
         nullptr) != OK){
-            printf("gpio enable failed\n");
+            printf("gpio int enable failed\n");
             return false;
         }
 

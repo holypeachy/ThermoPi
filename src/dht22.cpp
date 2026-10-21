@@ -68,6 +68,7 @@ static bool waitForLevel(UINT32 pin, UINT32 level, UINT32 timeoutUs)
     return true;
 }
 
+
 std::optional<std::array<UINT16, 2>> readSensor()
 {
     if (vxbGpioSetDir(DHT, GPIO_DIR_OUTPUT) != OK){
@@ -134,4 +135,3 @@ std::optional<std::array<UINT16, 2>> readSensor()
     UINT16 tempRaw =  (static_cast<UINT16>(data[2]) << 8) | data[3];
     return std::array<UINT16, 2>{tempRaw, humidityRaw};
 }
-

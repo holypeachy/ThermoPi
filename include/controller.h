@@ -2,7 +2,7 @@
 
 #include <vxWorks.h>
 
-constexpr ULONG AC_LOCKOUT_SECONDS = 20; // test value, increase to 5 min for normal use
+constexpr ULONG AC_LOCKOUT_SECONDS = 5*60; // test value, increase to 5 min for normal use
 
 enum class Mode : UINT8{
     Off = 0,
