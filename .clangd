@@ -1,0 +1,15 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - --target=arm64
+    - -D_WRS_KERNEL
+    - -DCPU=_VX_ARMARCH8A
+    - -D__vxworks
+    - -D__VXWORKS__
+    - '-D_VSB_CONFIG_FILE="/home/peach/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/sysroot/h/config/vsbConfig.h"'
+
+    - -I/home/peach/dev/vxshare/thermoPi/include
+    - -I/home/peach/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/sysroot/share/h
+    - -I/home/peach/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/sysroot/krnl/h/public
+    - -I/home/peach/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/sysroot/krnl/h/published/UTILS_UNIX
+    - -I/home/peach/dev/vxworks/wrsdk-vxworks7-raspberrypi4b-1.9.0/vxsdk/sysroot/krnl/3pp/develop/usr/include
